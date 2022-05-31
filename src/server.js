@@ -74,9 +74,9 @@ router.post("/contact", (req, res) => {
            <p>Email: ${email}</p>
            <p>Message: ${message}</p>`,
   };
-  sendEmail(emailOptions, (err) => {
+  sendEmail(emailOptions, err => {
     if (err) {
-      res.json({ status: "ERROR" });
+      res.json({ status: "SERVER ERROR" });
     } else {
       res.json({ status: "Message Sent" });
     }
