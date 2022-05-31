@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 const ContactForm = () => {
   const [status, setStatus] = useState("Submit");
-  const handleSubmit = async (e) => {
+  const handleSubmit = async e => {
     e.preventDefault();
     setStatus("Sending...");
     const { name, email, message } = e.target.elements;
@@ -13,16 +13,17 @@ const ContactForm = () => {
       email: email.value,
       message: message.value,
     };
-    let response = await fetch("http://localhost:5000/contact", {
+    await fetch("http://localhost:5000/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
       },
       body: JSON.stringify(details),
-    });
-    setStatus("Submit");
-    let result = await response.json();
-    alert(result.status);
+    })
+      .then(response => response.json())
+      .then(json => alert(json.status))
+      .catch(err => alert(err))
+      .finally(() => setStatus("Submit"));
   };
   return (
     <form onSubmit={handleSubmit}>
