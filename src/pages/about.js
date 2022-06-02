@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import headshot from "../../src/images/PD_Headshot3_032022_297x297.jpg";
 
 function About() {
@@ -56,7 +57,9 @@ function About() {
           <br />
           Contact me today.
         </p>
-        {/* Add button here */}
+        <Link to="/contact" class="link.contact">
+          <button class="btn.contact">Explore what's possible!</button>
+        </Link>
         <img src={headshot} alt="Patty DeMartino headshot"></img>
         <p class="name">Patty DeMartino</p>
         <p class="nbc-hwc">NBC-HWC</p>
