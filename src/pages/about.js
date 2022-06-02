@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./about.css";
 import headshot from "../../src/images/PD_Headshot3_032022_297x297.jpg";
 
 function About() {
   return (
-    <body class="about">
-      <section class="process">
+    <body id="about">
+      <section id="process">
         <h1>About Plant Path Wellness</h1>
         <p>
           Each of us holds the power to impact our health daily. PlantPath
@@ -16,7 +17,7 @@ function About() {
         </p>
         <h2>Approach</h2>
         <p>I meet you where you are now.</p>
-        <p class="what-change">
+        <p id="what-change">
           What is the one change that would make everything easier to
           accomplish?
         </p>
@@ -52,19 +53,21 @@ function About() {
         </p>
       </section>
 
-      <section class="schedule">
+      <section id="schedule">
         <h1>Schedule Your Call To Action</h1>
         <p>
           Is the support of a coach what you need?
           <br />
           Contact me today.
         </p>
-        <Link to="/contact" class="link.contact">
-          <button class="btn.contact">Explore what's possible!</button>
-        </Link>
+        <p id="contact">
+          <Link to="/contact" id="link">
+            <button id="btn">Explore what's possible!</button>
+          </Link>
+        </p>
         <img src={headshot} alt="Patty DeMartino headshot"></img>
-        <p class="name">Patty DeMartino</p>
-        <p class="nbc-hwc">NBC-HWC</p>
+        <p id="name">Patty DeMartino</p>
+        <p id="nbc-hwc">NBC-HWC</p>
       </section>
     </body>
   );
