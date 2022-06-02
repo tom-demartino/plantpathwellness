@@ -18,6 +18,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/info" element={<Info />} />
       </Routes>
+      {/* Insert footer here */}
     </Router>
   );
 }
