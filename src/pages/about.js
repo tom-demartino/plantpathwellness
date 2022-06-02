@@ -35,17 +35,19 @@ function About() {
           &amp; Wellness Certifying Exam.
         </p>
         <p>
-          <b>WellStart Health Wellness Coach</b> - In 2018 I completed a
-          five-month health coach training with <b>WellStart Health, Inc.</b>{" "}
-          under the direction of <i>Howard Jacobson, PhD</i>. This small-group
+          <strong>WellStart Health Wellness Coach</strong> - In 2018 I completed
+          a five-month health coach training with <b>WellStart Health, Inc.</b>
+          under the direction of <em>Howard Jacobson, PhD</em>. This small-group
           interactive program focused on behavior change and habit formation.
           Introducing these strategies has proven to be a game changer for
           clients and for my practice. Not a therapeutic model, but an
           outcome-oriented approach to making change.
         </p>
         <p>
-          <b>National Board Certified Health and Wellness Coach (NBC-HWC)</b> -
-          March 2020 I achieved NBHWC Board Certification status, exam
+          <strong>
+            National Board Certified Health and Wellness Coach (NBC-HWC)
+          </strong>
+          - March 2020 I achieved NBHWC Board Certification status, exam
           administered by the National Board of Medical Examiners (NBME).
         </p>
       </section>
