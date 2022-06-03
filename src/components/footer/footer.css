@@ -1,0 +1,20 @@
+#footer {
+  padding: 3em;
+  background-color: lightgoldenrodyellow;
+  font-size: 12px;
+  text-align: start;
+}
+
+#copyright {
+  color: gray;
+}
+
+#disclaimer {
+  font-size: larger;
+  font-style: italic;
+}
+
+.otherInfo {
+  font-size: smaller;
+  text-align: center;
+}
