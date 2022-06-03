@@ -1,0 +1,82 @@
+/* Page */
+#about {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+}
+
+/* Sections */
+#center-screen {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  border: solid;
+  border-width: thin;
+}
+#process {
+  margin-left: 2em;
+  margin-right: 0;
+  width: 50em;
+  background-color: hsl(180, 100%, 97%, 0.6);
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: start;
+  float: left;
+}
+#schedule {
+  margin-left: 1em;
+  width: 25em;
+  background-color: hsla(103, 27%, 65%, 0.6);
+  text-align: center;
+  float: left;
+}
+
+/* Process */
+#process h1 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  text-align: center;
+}
+#process h2 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+#process #what-change {
+  margin-top: -0.5em;
+  font-size: x-large;
+  font-weight: 600;
+  color: rgb(99, 153, 79);
+}
+
+/* Schedule */
+#schedule h1 {
+  text-transform: uppercase;
+  color: rgb(39, 19, 58);
+}
+
+#schedule #contact #btn {
+  background-color: rgb(240, 156, 0);
+  border: none;
+  color: black;
+  padding: 1em;
+  font-size: medium;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#schedule #name {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: rgb(39, 19, 58);
+  font-size: xx-large;
+}
+#schedule #nbc-hwc {
+  margin-top: 0;
+  color: rgb(61, 57, 65);
+  font-size: xx-large;
+  font-style: italic;
+}
