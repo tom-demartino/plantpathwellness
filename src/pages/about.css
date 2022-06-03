@@ -5,23 +5,33 @@
 }
 
 /* Sections */
-#process {
-  margin: 5em;
-  width: 50em;
+#center-screen {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  margin-top: 3em;
+  margin-bottom: 3em;
   border: solid;
   border-width: thin;
+}
+#process {
+  margin-left: 2em;
+  margin-right: 0;
+  width: 50em;
   background-color: hsl(180, 100%, 97%, 0.6);
   padding-left: 1em;
   padding-right: 1em;
   text-align: start;
+  float: left;
 }
 #schedule {
-  margin: 5em;
+  margin-left: 1em;
   width: 25em;
-  border: solid;
-  border-width: thin;
   background-color: hsla(103, 27%, 65%, 0.6);
   text-align: center;
+  float: left;
 }
 
 /* Process */
