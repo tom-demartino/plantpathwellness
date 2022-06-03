@@ -2,6 +2,9 @@
 #about {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 16px;
+  /* background-image: url(https://images.pexels.com/photos/7919/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
+  background-image: url(../../src/images/clouds-mountains.jpg);
+  background-size: contain;
 }
 
 /* Sections */
@@ -20,7 +23,7 @@ section {
   margin-left: 2em;
   margin-right: 0;
   width: 50em;
-  background-color: hsl(180, 100%, 97%, 0.6);
+  background-color: hsl(180, 100%, 97%, 0.8);
   padding-left: 1em;
   padding-right: 1em;
   text-align: start;
@@ -29,7 +32,7 @@ section {
 #schedule {
   margin-left: 1em;
   width: 25em;
-  background-color: hsla(103, 27%, 65%, 0.6);
+  background-color: hsla(103, 27%, 65%, 0.8);
   text-align: center;
   float: left;
 }
