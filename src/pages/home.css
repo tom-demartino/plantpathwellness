@@ -1,0 +1,117 @@
+#home {
+  justify-content: center;
+  text-align: center;
+  background-image: url(https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg);
+  background-attachment: fixed;
+}
+
+#div1 {
+  background-image: url(https://images.pexels.com/photos/326281/pexels-photo-326281.jpeg?cs=srgb&dl=pexels-pixabay-326281.jpg&fm=jpg);
+  height: 50em;
+}
+
+#div1 #learn {
+  margin: auto;
+  padding: 10px;
+  border: solid;
+  border-color: antiquewhite;
+  background-color: rgba(31, 12, 66, 0.7);
+  width: 40em;
+  height: 20em;
+  transform: translate(0%, 50%);
+}
+
+#div1 #learn #approach {
+  color: white;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+#div1 #learn #habits {
+  color: white;
+  white-space: nowrap;
+  font-size: 1.2em;
+}
+
+#div1 #btn {
+  background-color: orange;
+  border: none;
+  padding: 1em;
+}
+
+#div2 {
+  background-color: rgb(97, 55, 146);
+  color: white;
+  border: solid;
+  border-color: transparent;
+}
+
+#div2 table {
+  margin: auto;
+  padding-top: 10px;
+}
+
+#div2 tr td {
+  padding: 0 30px;
+  font-size: 1.2em;
+}
+
+#div2 #coaching {
+  color: rgb(162, 211, 195);
+  font-size: 2em;
+  font-style: italic;
+  margin-top: 0.5em;
+}
+
+#div3 {
+  margin: auto;
+  background-color: white;
+}
+
+#div3 p {
+  width: 80em;
+  margin: auto;
+  padding: 1em 0;
+}
+
+#div4 {
+  height: 300px;
+  background-color: transparent;
+}
+
+#div5 {
+  background-color: white;
+}
+
+#div5 table {
+  margin: auto;
+  padding: 40px;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+#div6 {
+  background-color: rgb(129, 150, 93);
+  color: white;
+  height: 300px;
+}
+
+#div6 p {
+  font-style: italic;
+  font-size: 2em;
+  padding-top: 1em;
+}
+
+#div7 {
+  background-color: white;
+}
+
+#div7 table {
+  margin: auto;
+  padding: 40px;
+}
+
+#div7 table td {
+  padding: 20px;
+}
