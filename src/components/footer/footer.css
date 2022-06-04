@@ -5,6 +5,11 @@
   text-align: start;
 }
 
+#textbox {
+  width: 100em;
+  margin: auto;
+}
+
 #copyright {
   color: gray;
 }
