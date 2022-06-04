@@ -6,6 +6,7 @@ export const Head = styled.header`
   margin-left: auto;
   margin-right: auto;
   margin-top: -0.5em;
+  padding-left: calc(100vw - 100%);
   width: 35em;
   text-align: right;
   font-size: 36px;
@@ -16,7 +17,7 @@ export const Head = styled.header`
 export const LogoBox = styled.div`
   text-align: left;
   float: left;
-  position: absolute;
+  position: relative;
   top: 1em;
   bottom: 0;
   left: 0;
@@ -40,7 +41,7 @@ export const Nav = styled.nav`
   height: 85px;
   display: flex;
   justify-content: end;
-  padding: 0.2rem calc((90vw - 1000px) / 2);
+  padding: 0.2rem calc((90vw - 1000px) / 2 - (100vw - 100%));
   z-index: 12;
 `;
 
@@ -50,6 +51,7 @@ export const NavLink = styled(Link)`
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
+  white-space: nowrap;
   height: 100%;
   cursor: pointer;
   &.active {
