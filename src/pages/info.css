@@ -1,0 +1,64 @@
+#info {
+  justify-content: center;
+  text-align: center;
+  background-image: url(https://images.pexels.com/photos/39308/runners-silhouettes-athletes-fitness-39308.jpeg);
+  background-attachment: fixed;
+}
+
+#window {
+  height: 1200px;
+  background-color: transparent;
+}
+
+#window h1 {
+  color: white;
+  padding-top: 100px;
+  font-size: 36px;
+}
+
+#window #bar {
+  background-color: blanchedalmond;
+  position: relative;
+  top: 10%;
+  padding: 50px 0;
+}
+
+#window #bar p {
+  width: 70em;
+  margin: 20px auto;
+}
+
+#window #bar ul {
+  text-align: start;
+}
+
+#bar table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 80em;
+  height: 10em;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+#bar table td {
+  border-left: solid;
+  border-right: solid;
+  border-width: thin;
+  padding: 20px;
+  vertical-align: top;
+}
+
+#bar table td:first-child {
+  border-left: 0;
+}
+
+#bar table td:last-child {
+  border-right: 0;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
