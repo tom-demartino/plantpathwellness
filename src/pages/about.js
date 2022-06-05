@@ -5,7 +5,7 @@ import headshot from "../../src/images/PD_Headshot3_032022_297x297.jpg";
 
 function About() {
   return (
-    <body id="about">
+    <div id="about">
       <div id="center-screen">
         <section id="process">
           <h1>About Plant Path Wellness</h1>
@@ -71,7 +71,7 @@ function About() {
           <p id="nbc-hwc">NBC-HWC</p>
         </section>
       </div>
-    </body>
+    </div>
   );
 }
 

@@ -3,7 +3,7 @@ import "./footer.css";
 
 function Footer() {
   return (
-    <body id="footer">
+    <div id="footer">
       <div id="textbox">
         <p>
           <span id="copyright">
@@ -35,7 +35,7 @@ function Footer() {
           Integrative Nutrition Inc. (used with permission)
         </p>
       </div>
-    </body>
+    </div>
   );
 }
 

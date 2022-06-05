@@ -7,7 +7,7 @@ import spoons from "../../src/images/spoons.jpg";
 
 function Home() {
   return (
-    <body id="home">
+    <div id="home">
       <div id="div1">
         <section id="learn">
           <p id="approach"> a behavior-based approach to creating change</p>
@@ -108,7 +108,7 @@ function Home() {
           </tbody>
         </table>
       </div>
-    </body>
+    </div>
   );
 }
 
