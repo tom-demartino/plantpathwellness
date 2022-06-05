@@ -6,6 +6,23 @@
   text-align: start;
 }
 
+#social-links {
+  margin: auto;
+  width: 100em;
+  text-align: end;
+}
+
+#social-links a {
+  background-color: transparent;
+  border: none;
+  padding: 0 5px;
+}
+
+#social-links a img {
+  height: 30px;
+  width: auto;
+}
+
 #textbox {
   width: 100em;
   margin: auto;

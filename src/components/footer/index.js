@@ -1,9 +1,19 @@
 import React from "react";
 import "./footer.css";
+import fbLogo from "../../../src/images/fb-logo.webp";
+import instaLogo from "../../../src/images/insta-logo.webp";
 
 function Footer() {
   return (
     <div id="footer">
+      <div id="social-links">
+        <a href="http://facebook.com/Plant-Path-Wellness" target="_blank">
+          <img src={fbLogo} alt="Facebook logo" />
+        </a>
+        <a href="http://instagram.com/plantpathwellness" target="_blank">
+          <img src={instaLogo} alt="Instagram logo" />
+        </a>
+      </div>
       <div id="textbox">
         <p>
           <span id="copyright">
