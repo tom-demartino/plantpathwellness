@@ -1,11 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./home.css";
 import wonton from "../../src/images/wonton.jpg";
 import waterGlass from "../../src/images/water-glass.png";
 import spoons from "../../src/images/spoons.jpg";
+import { FaStaylinked } from "react-icons/fa";
 
 function Home() {
+  const sliderSettings = {
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
     <div id="home">
       <div id="div1">
@@ -75,6 +88,19 @@ function Home() {
           <span style={{ color: "greenyellow" }}>Path</span>{" "}
           <span style={{ color: "rgb(200, 200, 200)" }}>Wellness</span>
         </p>
+        <Slider {...sliderSettings}>
+          <div>
+            <h2>"You have truly inspired me, Patty!"</h2>
+          </div>
+          <div>
+            <h2>"I'm LOVING it! And I am so grateful to you."</h2>
+          </div>
+          <div>
+            <h2>
+              "The more you eat this way, the more you want to eat this way."
+            </h2>
+          </div>
+        </Slider>
       </div>
       <div id="div7">
         <table>

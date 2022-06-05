@@ -105,6 +105,11 @@
   font-size: 2em;
 }
 
+#div6 h2 {
+  font-weight: 300;
+  font-style: italic;
+}
+
 #div7 {
   background-color: white;
 }
