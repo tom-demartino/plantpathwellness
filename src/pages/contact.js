@@ -1,11 +1,14 @@
 import React from "react";
-import ContactForm from "../ContactForm";
+import "./contact.css";
+import ContactForm from "../components/contactForm";
 
 function Contact() {
   return (
-    <div>
+    <div id="contact">
       <h1>CONTACT PAGE</h1>
-      <ContactForm />
+      <div id="form-box">
+        <ContactForm />
+      </div>
     </div>
   );
 }

@@ -1,8 +1,9 @@
 // From https://w3collective.com/react-contact-form/
 
 import React, { useState } from "react";
+import "./contactForm.css";
 
-const ContactForm = () => {
+function ContactForm() {
   const [status, setStatus] = useState("Submit");
   const handleSubmit = async e => {
     e.preventDefault();
@@ -28,20 +29,26 @@ const ContactForm = () => {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <label htmlFor="name">Name:</label>
-        <input type="text" id="name" required />
+        {/* <label htmlFor="name">Name:</label><br /> */}
+        <input type="text" class="box" id="name" placeholder="Name" required />
       </div>
       <div>
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" required />
+        {/* <label htmlFor="email">Email:</label><br /> */}
+        <input
+          type="email"
+          class="box"
+          id="email"
+          placeholder="Email"
+          required
+        />
       </div>
       <div>
-        <label htmlFor="message">Message:</label>
-        <textarea id="message" required />
+        {/* <label htmlFor="message">Message:</label><br /> */}
+        <textarea class="box" id="message" placeholder="Message" required />
       </div>
       <button type="submit">{status}</button>
     </form>
   );
-};
+}
 
 export default ContactForm;

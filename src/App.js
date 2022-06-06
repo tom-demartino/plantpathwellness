@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
@@ -7,7 +6,6 @@ import Home from "./pages";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 import Info from "./pages/info";
-import ContactForm from "./ContactForm";
 
 function App() {
   return (
