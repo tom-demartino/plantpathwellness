@@ -1,7 +1,6 @@
 #footer {
   padding: 3em;
   padding-left: calc(100vw - 100%);
-  background-color: lightgoldenrodyellow;
   font-size: 12px;
   text-align: start;
 }
