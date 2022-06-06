@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import "./contactForm.css";
 
 function ContactForm() {
-  const [status, setStatus] = useState("Submit");
+  const [status, setStatus] = useState("Send");
   const handleSubmit = async e => {
     e.preventDefault();
     setStatus("Sending...");
@@ -24,7 +24,7 @@ function ContactForm() {
       .then(response => response.json())
       .then(json => alert(json.status))
       .catch(err => alert(err))
-      .finally(() => setStatus("Submit"));
+      .finally(() => setStatus("Send"));
   };
   return (
     <form onSubmit={handleSubmit}>
