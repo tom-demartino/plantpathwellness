@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import "./contactForm.css";
 
-function ContactForm() {
+function ContactForm(prop) {
   const [status, setStatus] = useState("Send");
   const handleSubmit = async e => {
     e.preventDefault();
