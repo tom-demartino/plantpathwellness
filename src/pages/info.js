@@ -4,7 +4,7 @@ import "./info.css";
 
 function Info() {
   return (
-    <div id="info">
+    <div id="info-page">
       <div id="window">
         <h1>HEALTH COACHING</h1>
         <div id="bar">

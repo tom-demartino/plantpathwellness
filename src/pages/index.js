@@ -21,7 +21,7 @@ function Home() {
     slidesToScroll: 1,
   };
   return (
-    <div id="home">
+    <div id="home-page">
       <div id="div1">
         <section id="learn">
           <p id="approach"> a behavior-based approach to creating change</p>

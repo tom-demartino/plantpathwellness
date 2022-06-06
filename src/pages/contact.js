@@ -4,7 +4,7 @@ import ContactForm from "../components/contactForm";
 
 function Contact() {
   return (
-    <div id="contact">
+    <div id="contact-page">
       <div class="bar" id="top"></div>
       <div id="content">
         <h2>Could a partner help you get there?</h2>

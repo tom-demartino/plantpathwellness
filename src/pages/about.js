@@ -5,7 +5,7 @@ import headshot from "../../src/images/PD_Headshot3_032022_297x297.jpg";
 
 function About() {
   return (
-    <div id="about">
+    <div id="about-page">
       <div id="center-screen">
         <section id="process">
           <h1>About Plant Path Wellness</h1>
