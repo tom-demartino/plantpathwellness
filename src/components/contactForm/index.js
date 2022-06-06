@@ -29,11 +29,9 @@ function ContactForm() {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        {/* <label htmlFor="name">Name:</label><br /> */}
         <input type="text" class="box" id="name" placeholder="Name" required />
       </div>
       <div>
-        {/* <label htmlFor="email">Email:</label><br /> */}
         <input
           type="email"
           class="box"
@@ -43,7 +41,6 @@ function ContactForm() {
         />
       </div>
       <div>
-        {/* <label htmlFor="message">Message:</label><br /> */}
         <textarea class="box" id="message" placeholder="Message" required />
       </div>
       <button type="submit">{status}</button>
