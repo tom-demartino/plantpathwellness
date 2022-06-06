@@ -11,6 +11,7 @@ import { FaStaylinked } from "react-icons/fa";
 
 function Home() {
   const sliderSettings = {
+    arrows: false,
     dots: true,
     autoplay: true,
     autoplaySpeed: 5000,
