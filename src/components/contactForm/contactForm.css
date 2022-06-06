@@ -6,6 +6,8 @@
   border: 2px solid #ccc;
   transition: 0.5s;
   outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
 }
 
 .box:focus {
@@ -22,4 +24,20 @@
 
 #message {
   min-height: 12em;
+}
+
+button {
+  padding: 10px 20px;
+  color: black;
+  background-color: rgb(180, 180, 180);
+  font-size: larger;
+  text-transform: uppercase;
+  border: solid;
+  border-width: thin;
+  border-color: black;
+  border-radius: 4px;
+}
+
+button:hover {
+  cursor: pointer;
 }
