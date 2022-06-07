@@ -1,56 +1,49 @@
-header {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -0.5em;
-  padding-left: calc(100vw - 100%);
-  width: 35em;
-  text-align: right;
-  font-size: 36px;
-  height: 175px;
-  position: relative;
+/* global CSS variables. Breakpoints from bootstrap are used and can be found here: https://getbootstrap.com/docs/5.0/layout/breakpoints/ */
+:root {
+  --xs-min-width: 0;
+  --sm-min-width: 576px;
+  --md-min-width: 768px;
+  --lg-min-width: 992px;
+  --xl-min-width: 1200px;
+  --xxl-min-width: 1400px;
+
+  --xs-max-width: 0;
+  --sm-max-width: 575.98px;
+  --md-max-width: 767.98px;
+  --lg-max-width: 991.98px;
+  --xl-max-width: 1199.98px;
+  --xxl-max-width: 1399.98px;
 }
 
-div {
-  text-align: left;
-  float: left;
-  position: relative;
-  top: 1em;
-  bottom: 0;
-  left: 0;
+.navbar {
+  padding: 0;
 }
 
-img {
-  object-fit: contain;
-  width: 70%;
+.navbar img {
+  width: 120px;
+  background-color: transparent;
 }
-
-div {
-  text-align: right;
-  float: right;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-nav {
-  background: #ffffff;
-  height: 85px;
-  display: flex;
-  justify-content: end;
-  padding: 0.2rem calc((90vw - 1000px) / 2 - (100vw - 100%));
-  z-index: 12;
-}
-
-div {
-  display: flex;
-  align-items: center;
-  margin-right: -24px;
-  /* Second Nav */
-  /* margin-right: 24px; */
-  /* Third Nav */
-  /* width: 100vw;
-white-space: nowrap; */
-  @media screen and (max-width: 768px) {
-    display: none;
+@media screen and (min-width: 992px) {
+  .navbar img {
+    width: 300px;
   }
 }
+
+@media screen and (min-width: 576px) {
+  #responsive-navbar-nav {
+    justify-content: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1%;
+  }
+}
+
+.navbar .brand {
+  padding: 0;
+}
+
+.container {
+  position: relative;
+}
+

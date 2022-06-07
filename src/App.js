@@ -6,6 +6,7 @@ import Home from "./pages";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 import Info from "./pages/info";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
