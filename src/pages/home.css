@@ -23,6 +23,13 @@
   background-size: cover;
 }
 
+/* iphones don't support this feature of course */
+@supports (-webkit-touch-callout: none) {
+  #homepage {
+    background-size: 1000px;
+  }
+}
+
 #homepage #div1 {
   background-color: rgb(255, 255, 255);
   border-width: thin;
