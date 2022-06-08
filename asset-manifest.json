@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/plantpathwellness-website/static/css/main.782033df.css",
+    "main.js": "/plantpathwellness-website/static/js/main.5cdcc437.js",
+    "static/js/787.b1e25a1f.chunk.js": "/plantpathwellness-website/static/js/787.b1e25a1f.chunk.js",
+    "static/media/food-background.jpeg": "/plantpathwellness-website/static/media/food-background.3b87d979f5c469469c1a.jpeg",
+    "static/media/water-glass.png": "/plantpathwellness-website/static/media/water-glass.e5ada91c1297de74c396.png",
+    "static/media/spoons.jpg": "/plantpathwellness-website/static/media/spoons.f856097dbd270f353808.jpg",
+    "static/media/wonton.jpg": "/plantpathwellness-website/static/media/wonton.dd6bfe80f98033b5f89e.jpg",
+    "static/media/PD_Headshot3_032022_297x297.jpg": "/plantpathwellness-website/static/media/PD_Headshot3_032022_297x297.fe0b81e79a9c730b1d08.jpg",
+    "static/media/plant_path_text_only1_copy_600x273.jpg": "/plantpathwellness-website/static/media/plant_path_text_only1_copy_600x273.c721c208a23c22019184.jpg",
+    "static/media/slick.svg": "/plantpathwellness-website/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/plantpathwellness-website/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/plantpathwellness-website/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/insta-logo.webp": "/plantpathwellness-website/static/media/insta-logo.6713dc9997db33f2a5bf.webp",
+    "static/media/slick.woff": "/plantpathwellness-website/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/plantpathwellness-website/index.html",
+    "static/media/fb-logo.webp": "/plantpathwellness-website/static/media/fb-logo.e3c6515fafabbb947cd6.webp",
+    "main.782033df.css.map": "/plantpathwellness-website/static/css/main.782033df.css.map",
+    "main.5cdcc437.js.map": "/plantpathwellness-website/static/js/main.5cdcc437.js.map",
+    "787.b1e25a1f.chunk.js.map": "/plantpathwellness-website/static/js/787.b1e25a1f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.782033df.css",
+    "static/js/main.5cdcc437.js"
+  ]
+}
