@@ -1,64 +1,88 @@
-#info-page {
+/* global CSS variables. Breakpoints from bootstrap are used and can be found here: https://getbootstrap.com/docs/5.0/layout/breakpoints/ */
+:root {
+  --xs-min-width: 0;
+  --sm-min-width: 576px;
+  --md-min-width: 768px;
+  --lg-min-width: 992px;
+  --xl-min-width: 1200px;
+  --xxl-min-width: 1400px;
+
+  --xs-max-width: 0;
+  --sm-max-width: 575.98px;
+  --md-max-width: 767.98px;
+  --lg-max-width: 991.98px;
+  --xl-max-width: 1199.98px;
+  --xxl-max-width: 1399.98px;
+}
+
+#infopage {
   justify-content: center;
   text-align: center;
-  background-image: url(https://images.pexels.com/photos/39308/runners-silhouettes-athletes-fitness-39308.jpeg);
-  background-attachment: fixed;
+  background: radial-gradient(circle at 100%,
+  rgb(8, 117, 63),
+  rgb(45, 167, 184) 50%,
+  rgb(26, 71, 167) 74.8%,
+  rgb(185, 185, 185) 75%,
+  rgb(90, 90, 90) 90%);
+  overflow: hidden;
 }
 
-#window {
-  height: 1200px;
-  background-color: transparent;
+#infopage #div1 {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 5rem 0;
+}
+@media screen and (min-width: 576px) {
+  #infopage #div1 {
+    margin: 10rem 0;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: thin;
+  }
 }
 
-#window h1 {
-  color: white;
-  padding-top: 100px;
-  font-size: 36px;
+#infopage #quote {
+  margin-top: 3rem;
+  padding-bottom: 4rem;
 }
 
-#window #bar {
-  background-color: blanchedalmond;
-  position: relative;
-  top: 10%;
-  padding: 50px 0;
+#infopage .wrapper {
+  display: grid;
+  margin-top: 5rem;
 }
-
-#window #bar p {
-  width: 70em;
-  margin: 20px auto;
+#infopage .wrapper div {
+  padding: 2rem 2rem;
 }
-
-#window #bar ul {
-  text-align: start;
+@media screen and (max-width: 767.98px) {
+  #infopage .wrapper div {
+    border-top: solid;
+    border-bottom: solid;
+    border-width: thin;
+    margin: 0 1rem;
+  }
+  #infopage .wrapper div:first-of-type {
+    border-top: none;
+  }
+  #infopage .wrapper div:last-of-type {
+    border-bottom: none;
+  }
 }
-
-#bar table {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  width: 80em;
-  height: 10em;
-  border-collapse: collapse;
-  table-layout: fixed;
-}
-
-#bar table td {
-  border-left: solid;
-  border-right: solid;
-  border-width: thin;
-  padding: 20px;
-  vertical-align: top;
-}
-
-#bar table td:first-child {
-  border-left: 0;
-}
-
-#bar table td:last-child {
-  border-right: 0;
+@media screen and (min-width: 768px) {
+  #infopage .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #infopage .wrapper div {
+    border-left: solid;
+    border-right: solid;
+    border-width: thin;
+  }
+  #infopage .wrapper div:first-of-type {
+    border-left: none;
+  }
+  #infopage .wrapper div:last-of-type {
+    border-right: none;
+  }
 }
 
 .highlight {
   font-weight: bold;
 }
-
