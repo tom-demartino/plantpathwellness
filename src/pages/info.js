@@ -61,6 +61,17 @@ function Info() {
                 </ul>
               </div>
               <div>
+                <span style={{ fontSize: "larger" }}>
+                  <b>Additional services (local clients only):</b>
+                </span>
+                <ul>
+                  <li>90-minute supermarket tour</li>
+                  <li>2-hour pantry &amp; fridge clean out</li>
+                  <li>2-hour hands-on meal prep session</li>
+                  <li>Full-day (6 hours) customized support</li>
+                </ul>
+              </div>
+              <div>
                 Is partnering with a health coach for you? I invite you to
                 schedule a{" "}
                 <span class="highlight">FREE 30-minute discovery call</span> to
@@ -73,17 +84,6 @@ function Info() {
                     Let's go!
                   </span>
                 </Link>
-              </div>
-              <div>
-                <span style={{ fontSize: "larger" }}>
-                  <b>Additional services (local clients only):</b>
-                </span>
-                <ul>
-                  <li>90-minute supermarket tour</li>
-                  <li>2-hour pantry &amp; fridge clean out</li>
-                  <li>2-hour hands-on meal prep session</li>
-                  <li>Full-day (6 hours) customized support</li>
-                </ul>
               </div>
             </div>
           </div>

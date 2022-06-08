@@ -50,7 +50,7 @@
   margin-top: 5rem;
 }
 #infopage .wrapper div {
-  padding: 2rem 2rem;
+  /*  */
 }
 @media screen and (max-width: 767.98px) {
   #infopage .wrapper div {
@@ -58,6 +58,7 @@
     border-bottom: solid;
     border-width: thin;
     margin: 0 1rem;
+    padding: 2rem 0;
   }
   #infopage .wrapper div:first-of-type {
     border-top: none;
@@ -74,6 +75,7 @@
     border-left: solid;
     border-right: solid;
     border-width: thin;
+    padding: 2rem 2rem;
   }
   #infopage .wrapper div:first-of-type {
     border-left: none;
