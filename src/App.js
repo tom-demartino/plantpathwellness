@@ -1,8 +1,8 @@
 import "./App.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
-// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages";
 import About from "./pages/about";
 import Contact from "./pages/contact";
@@ -13,12 +13,12 @@ function App() {
   return (
     <Router basename="plantpathwellness-website">
       <Header />
-      <Switch>
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/info" element={<Info />} />
-      </Switch>
+      </Routes>
       <Footer />
     </Router>
   );
