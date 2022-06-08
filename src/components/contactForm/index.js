@@ -43,7 +43,9 @@ function ContactForm(prop) {
       <div>
         <textarea class="box" id="message" placeholder="Message" required />
       </div>
-      <button type="submit">{status}</button>
+      <button type="submit" className="myButton">
+        {status}
+      </button>
     </form>
   );
 }
