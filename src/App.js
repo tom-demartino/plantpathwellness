@@ -11,7 +11,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/plantpathwellness-website">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
