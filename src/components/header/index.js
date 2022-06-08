@@ -16,7 +16,9 @@ function Header() {
       >
         <Container className="container">
           <Navbar.Brand className="brand">
-            <img src={logo} alt="Plant Path Wellness logo" />
+            <Nav.Link href="/" style={{ padding: "0" }}>
+              <img src={logo} alt="Plant Path Wellness logo" />
+            </Nav.Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
