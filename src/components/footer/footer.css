@@ -1,30 +1,28 @@
 #footer {
-  padding: 3em;
-  padding-left: calc(100vw - 100%);
+  padding: 3em 0;
   font-size: 12px;
   text-align: start;
 }
 
-#social-links {
-  margin: auto;
-  width: 100em;
-  text-align: end;
+#footer .content-container {
+  padding: 0 1rem;
 }
 
-#social-links a {
+#social-links {
+  text-align: end;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+#social-links a:first-of-type {
   background-color: transparent;
   border: none;
-  padding: 0 5px;
+  padding-right: 0.5rem;
 }
 
 #social-links a img {
   height: 30px;
   width: auto;
-}
-
-#textbox {
-  width: 100em;
-  margin: auto;
 }
 
 #copyright {
