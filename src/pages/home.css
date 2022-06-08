@@ -18,7 +18,7 @@
 #homepage {
   justify-content: center;
   text-align: center;
-  background-image: url(https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg);
+  background-image: url("../images/food-background.jpeg");
   background-attachment: fixed;
   background-size: cover;
 }
