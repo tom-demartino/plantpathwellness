@@ -65,7 +65,7 @@
 
 #homepage #div3 {
   background-color: white;
-  padding: 2rem 1rem;
+  padding: 2rem 0;
 }
 
 #homepage #div4 {
@@ -79,15 +79,15 @@
 
 #homepage #div5 .wrapper {
   display: grid;
-  padding: 2rem 2rem;
+  padding: 2rem 0;
   row-gap: 2rem;
 }
 @media screen and (min-width: 1140px) {
   #homepage #div5 .wrapper {
     grid-template-columns: repeat(3, 1fr);
+    padding: 2rem 2rem;
   }
 }
-
 #homepage #div5 .wrapper div {
   font-size: 1.5rem;
   font-weight: 500;
@@ -96,7 +96,8 @@
 #homepage #div6 {
   background-color: rgb(129, 150, 93);
   color: white;
-  height: 300px;
+  padding: 3rem 0;
+  /* height: 300px; */
   border-top: solid;
   border-bottom: solid;
   border-color: black;
@@ -105,6 +106,7 @@
 #homepage #div6 p {
   font-style: italic;
   font-size: 2em;
+  padding-bottom: 2rem;
 }
 
 #homepage #div6 h2 {
