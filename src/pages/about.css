@@ -1,83 +1,86 @@
-/* Page */
-#about-page {
+/* global CSS variables. Breakpoints from bootstrap are used and can be found here: https://getbootstrap.com/docs/5.0/layout/breakpoints/ */
+:root {
+  --xs-min-width: 0;
+  --sm-min-width: 576px;
+  --md-min-width: 768px;
+  --lg-min-width: 992px;
+  --xl-min-width: 1200px;
+  --xxl-min-width: 1400px;
+
+  --xs-max-width: 0;
+  --sm-max-width: 575.98px;
+  --md-max-width: 767.98px;
+  --lg-max-width: 991.98px;
+  --xl-max-width: 1199.98px;
+  --xxl-max-width: 1399.98px;
+}
+
+#aboutpage {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 16px;
-  /* background-image: url(https://images.pexels.com/photos/7919/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
-  background-image: url(../../src/images/clouds-mountains.jpg);
-  background-size: contain;
-}
-
-/* Sections */
-#center-screen {
-  display: flex;
   justify-content: center;
-}
-
-section {
-  margin-top: 3em;
-  margin-bottom: 3em;
-  border: solid;
-  border-width: thin;
-}
-#process {
-  margin-left: 2em;
-  margin-right: 0;
-  width: 50em;
-  background-color: hsl(180, 100%, 97%, 0.8);
-  padding-left: 1em;
-  padding-right: 1em;
-  text-align: start;
-  float: left;
-}
-#schedule {
-  margin-left: 1em;
-  width: 25em;
-  background-color: hsla(103, 27%, 65%, 0.8);
   text-align: center;
-  float: left;
+  background: radial-gradient(circle at 100%,
+  rgb(8, 117, 63),
+  rgb(45, 167, 184) 50%,
+  rgb(26, 71, 167) 74.8%,
+  rgb(185, 185, 185) 75%,
+  rgb(90, 90, 90) 90%);
+  overflow: hidden;
 }
 
-/* Process */
-#process h1 {
-  font-size: 2.5em;
+#aboutpage #div1 {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 5rem 0;
+}
+@media screen and (min-width: 576px) {
+  #aboutpage #div1 {
+    margin: 10rem 0;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: thin;
+  }
+}
+
+#aboutpage .wrapper {
+  display: grid;
+  gap: 2rem;
+}
+@media screen and (min-width: 992px) {
+  #aboutpage .wrapper {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+#aboutpage #process h1 {
+  font-size: 2.5rem;
   text-transform: uppercase;
   text-align: center;
 }
-#process h2 {
-  font-size: 2.5em;
+#aboutpage #process h2 {
+  font-size: 2.5rem;
   text-align: center;
 }
 
-#process #what-change {
-  margin-top: -0.5em;
+#aboutpage #process #what-change {
+  margin-top: -0.5rem;
   font-size: x-large;
   font-weight: 600;
   color: rgb(99, 153, 79);
 }
 
-/* Schedule */
-#schedule h1 {
+#aboutpage #schedule h1 {
   text-transform: uppercase;
   color: rgb(39, 19, 58);
 }
 
-#schedule #contact #btn {
-  background-color: rgb(240, 156, 0);
-  border: none;
-  color: black;
-  padding: 1em;
-  font-size: medium;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-#schedule #name {
+#aboutpage #schedule #name {
   margin-top: 0;
   margin-bottom: 0.5em;
   color: rgb(39, 19, 58);
   font-size: xx-large;
 }
-#schedule #nbc-hwc {
+#aboutpage #schedule #nbc-hwc {
   margin-top: 0;
   color: rgb(61, 57, 65);
   font-size: xx-large;
