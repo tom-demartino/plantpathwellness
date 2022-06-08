@@ -9,10 +9,18 @@ function Footer() {
       <div id="footer">
         <div className="content-container">
           <div id="social-links">
-            <a href="http://facebook.com/Plant-Path-Wellness" target="_blank">
+            <a
+              href="http://facebook.com/Plant-Path-Wellness"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={fbLogo} alt="Facebook logo" />
             </a>
-            <a href="http://instagram.com/plantpathwellness" target="_blank">
+            <a
+              href="http://instagram.com/plantpathwellness"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={instaLogo} alt="Instagram logo" />
             </a>
           </div>
