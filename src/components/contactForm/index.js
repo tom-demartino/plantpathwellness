@@ -29,19 +29,25 @@ function ContactForm(prop) {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <input type="text" class="box" id="name" placeholder="Name" required />
+        <input
+          type="text"
+          className="box"
+          id="name"
+          placeholder="Name"
+          required
+        />
       </div>
       <div>
         <input
           type="email"
-          class="box"
+          className="box"
           id="email"
           placeholder="Email"
           required
         />
       </div>
       <div>
-        <textarea class="box" id="message" placeholder="Message" required />
+        <textarea className="box" id="message" placeholder="Message" required />
       </div>
       <button type="submit" className="myButton">
         {status}
