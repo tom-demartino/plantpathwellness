@@ -15,7 +15,9 @@
       "function": {
         "nodemailer": {
           "secretsPathAmplifyAppId": "d2gitbzkcj1vtg",
-          "ppwEmail": "detho23@gmail.com"
+          "ppwEmail": "detho23@gmail.com",
+          "deploymentBucketName": "amplify-plantpathwellness-dev-105856-deployment",
+          "s3Key": "amplify-builds/nodemailer-46496d70422b37466569-build.zip"
         }
       }
     }
