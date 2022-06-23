@@ -2,25 +2,28 @@
 
 import React, { useState } from "react";
 import "./contactForm.css";
+import { Amplify, API, Auth } from "aws-amplify";
+import awsmobile from "../../../src/aws-exports";
+
+Amplify.configure(awsmobile);
+Auth.configure(awsmobile);
 
 function ContactForm(prop) {
   const [status, setStatus] = useState("Send");
   const handleSubmit = async e => {
     e.preventDefault();
     setStatus("Sending...");
+
+    const apiName = "express";
+    const path = "/express";
     const { name, email, message } = e.target.elements;
     let details = {
       name: name.value,
       email: email.value,
       message: message.value,
     };
-    await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
-    })
+
+    API.post(apiName, path, JSON.stringify(details))
       .then(response => response.json())
       .then(json => alert(json.status))
       .catch(err => alert(err))
