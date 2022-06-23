@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@aws-amplify/api-graphql": "^2.3.8",
     "@aws-sdk/client-ses": "^3.112.0",
     "@aws-sdk/credential-provider-node": "^3.112.0",
     "@testing-library/jest-dom": "^5.16.4",
