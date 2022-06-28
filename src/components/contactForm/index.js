@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import "./contactForm.css";
-import { Amplify, API, Auth } from "aws-amplify";
+import { Amplify, Auth } from "aws-amplify";
 import awsmobile from "../../../src/aws-exports";
 
 Amplify.configure(awsmobile);
@@ -14,8 +14,6 @@ function ContactForm(prop) {
     e.preventDefault();
     setStatus("Sending...");
 
-    const apiName = "express";
-    const path = "/express";
     const { name, email, message } = e.target.elements;
     let details = {
       name: name.value,
@@ -23,7 +21,16 @@ function ContactForm(prop) {
       message: message.value,
     };
 
-    API.post(apiName, path, JSON.stringify(details))
+    await fetch(
+      "https://vh5b1jnhyc.execute-api.us-west-1.amazonaws.com/dev/express",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(details),
+      }
+    )
       .then(response => response.json())
       .then(json => alert(json.status))
       .catch(err => alert(err))
