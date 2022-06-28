@@ -25,6 +25,9 @@
     },
     "ppwEmail": {
       "Type": "String"
+    },
+    "ppwBackendEmail": {
+      "Type": "String"
     }
   },
   "Conditions": {
@@ -79,28 +82,6 @@
             },
             "REGION": {
               "Ref": "AWS::Region"
-            },
-            "PPW_PASS": {
-              "Fn::Join": [
-                "",
-                [
-                  {
-                    "Fn::Sub": [
-                      "/amplify/${appId}/${env}/AMPLIFY_${functionName}_",
-                      {
-                        "appId": {
-                          "Ref": "secretsPathAmplifyAppId"
-                        },
-                        "env": {
-                          "Ref": "env"
-                        },
-                        "functionName": "nodemailer"
-                      }
-                    ]
-                  },
-                  "PPW_PASS"
-                ]
-              ]
             },
             "OAUTH2_CLIENT_ID": {
               "Fn::Join": [
@@ -170,6 +151,9 @@
             },
             "PPW_EMAIL": {
               "Ref": "ppwEmail"
+            },
+            "PPW_BACKEND_EMAIL": {
+              "Ref": "ppwBackendEmail"
             }
           }
         },

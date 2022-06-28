@@ -1,3 +1,17 @@
+/*
+Use the following code to retrieve configured secrets from SSM:
+
+const aws = require('aws-sdk');
+
+const { Parameters } = await (new aws.SSM())
+  .getParameters({
+    Names: ["OAUTH2_CLIENT_ID","OAUTH2_CLIENT_SECRET","OAUTH2_REFRESH_TOKEN"].map(secretName => process.env[secretName]),
+    WithDecryption: true,
+  })
+  .promise();
+
+Parameters will be of the form { Name: 'secretName', Value: 'secretValue', ... }[]
+*/
 const express = require("express");
 const bodyParser = require("body-parser");
 const awsServerlessExpressMiddleware = require("aws-serverless-express/middleware");
@@ -32,7 +46,6 @@ const createTransporter = async () => {
   const { Parameters } = await new aws.SSM()
     .getParameters({
       Names: [
-        "PPW_PASS",
         "OAUTH2_CLIENT_ID",
         "OAUTH2_CLIENT_SECRET",
         "OAUTH2_REFRESH_TOKEN",
@@ -46,7 +59,6 @@ const createTransporter = async () => {
     mySecrets[secret.Name] = secret.Value;
   });
 
-  const PPW_PASS = mySecrets[process.env.PPW_PASS];
   const OAUTH2_CLIENT_ID = mySecrets[process.env.OAUTH2_CLIENT_ID];
   const OAUTH2_CLIENT_SECRET = mySecrets[process.env.OAUTH2_CLIENT_SECRET];
   const OAUTH2_REFRESH_TOKEN = mySecrets[process.env.OAUTH2_REFRESH_TOKEN];
@@ -54,7 +66,7 @@ const createTransporter = async () => {
   const oauth2Client = new OAuth2({
     clientId: OAUTH2_CLIENT_ID,
     clientSecret: OAUTH2_CLIENT_SECRET,
-    redirectUri: "https://tom-demartino.com/contact",
+    redirectUri: "https://plantpathwellness.com/contact",
   });
 
   oauth2Client.setCredentials({
@@ -78,7 +90,7 @@ const createTransporter = async () => {
     service: "gmail",
     auth: {
       type: "OAuth2",
-      user: process.env.PPW_EMAIL,
+      user: process.env.PPW_BACKEND_EMAIL,
       accessToken,
       clientId: OAUTH2_CLIENT_ID,
       clientSecret: OAUTH2_CLIENT_SECRET,
@@ -100,7 +112,7 @@ app.post("/express", function (req, res) {
   const email = req.body.email;
   const message = req.body.message;
   const emailOptions = {
-    from: process.env.PPW_EMAIL,
+    from: process.env.PPW_BACKEND_EMAIL,
     to: process.env.PPW_EMAIL,
     subject: "Contact Form Submission".concat(" - ", name),
     html: `<p>Name: ${name}</p>
